@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: motorDeluxe
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Damian
+Implementation-Vendor-Id: es.urjc.motorDeluxe
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/motorDeluxe
+Created-By: Maven Integration for Eclipse
+
