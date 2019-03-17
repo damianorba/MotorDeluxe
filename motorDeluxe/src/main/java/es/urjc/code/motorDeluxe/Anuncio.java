@@ -32,15 +32,15 @@ public class Anuncio {
 	
 	public Anuncio () {}
 
-	public Anuncio(long id, String nombre, String asunto, Double precio, String comentario, Usuario usuario, Coche coche) {
+	public Anuncio(String nombre, String asunto, String comentario,  Double precio) {
 		super();
-		this.id = id;
+	
 		this.nombre = nombre;
 		this.asunto = asunto;
 		this.precio = precio;
 		this.comentario = comentario;
-		this.usuario = new Usuario;
-		this.coche = new Coche;
+		this.usuario = new Usuario ();
+		this.coche = new Coche();
 	}
 
 	public String getComentario() {
@@ -75,7 +75,7 @@ public class Anuncio {
 		this.asunto = asunto;
 	}
 
-	public String getPrecio() {
+	public Double getPrecio() {
 		return precio;
 	}
 

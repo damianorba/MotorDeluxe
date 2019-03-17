@@ -6,5 +6,7 @@ public interface CocheRepository extends JpaRepository<Coche, Long> {
 	
 	Coche findByMatricula(String matricula);
 	Coche findByMarca(String marca);
+	
+	Coche findOne(long id);
 
 }

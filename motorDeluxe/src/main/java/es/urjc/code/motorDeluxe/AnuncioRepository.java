@@ -6,4 +6,5 @@ public interface AnuncioRepository extends JpaRepository<Anuncio, Long> {
 
 	Anuncio findByAsunto (String asunto);
 	Anuncio findByNombre (String nombre);
+	Anuncio findOne(long id);
 }

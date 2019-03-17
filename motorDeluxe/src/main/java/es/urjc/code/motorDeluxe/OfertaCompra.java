@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -31,7 +32,7 @@ public class OfertaCompra {
 	public OfertaCompra() {}
 
 
-	public OfertaCompra(long id, String fechaOferta, Double precioOferta) {
+	public OfertaCompra(String fechaOferta, Double precioOferta) {
 		
 		this.id = id;
 		this.fechaOferta = fechaOferta;

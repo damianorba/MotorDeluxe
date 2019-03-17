@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -34,8 +35,9 @@ public class Coche {
    
     protected Coche(){}
 
-    public Coche(String matricula, String marca, String color, String extras, int numPuertas, double kilometros, int anioMatriculacion, double precio) {
-        this.matricula = matricula;
+    public Coche(String matricula, String marca, String modelo, String color, String extras, int numPuertas, double kilometros, int anioMatriculacion, double precio) {
+        this.id = id;
+    	this.matricula = matricula;
         this.marca = marca;
         this.color = color;
         this.extras = extras;
@@ -45,13 +47,7 @@ public class Coche {
         this.precio = precio;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
+    
 
     public String getMatricula() {
         return matricula;

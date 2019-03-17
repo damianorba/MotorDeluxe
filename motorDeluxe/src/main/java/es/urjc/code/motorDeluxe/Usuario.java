@@ -18,7 +18,7 @@ import org.springframework.web.context.annotation.SessionScope;
 @Entity
 @Component
 @SessionScope
-public class Usuario {, ,,
+public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
@@ -35,10 +35,10 @@ public class Usuario {, ,,
 	/**Constructores**/
 	
 	protected Usuario () {}
-	public Usuario(long id, String nombre, String dni, String email, String telefono, String password,
+	public Usuario(String nombre, String dni, String email, String telefono, String password,
 			String... privilegios) {
 		super();
-		this.id = id;
+	
 		this.nombre = nombre;
 		this.dni = dni;
 		this.email = email;
@@ -109,7 +109,7 @@ public class Usuario {, ,,
 	
 	
 	}
-}
+
 	
 
 

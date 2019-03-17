@@ -1,6 +1,6 @@
 package es.urjc.code.motorDeluxe;
 
-	
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,7 +34,7 @@ import javax.persistence.OneToOne;
 		    
 		    protected Venta(){}//constructor para usar el repositorio
 
-		    public Venta(long id, String fechaVenta, Double precio_venta) {
+		    public Venta(String fechaVenta, Double precio_venta) {
 				
 				this.id = id;
 				this.fechaVenta = fechaVenta;
