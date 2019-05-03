@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Premium deluxe</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<body bgcolor="#cddf89">
+	
+<font size="6" color="#df7644" face="Tahoma">
+</font>
+<div style="width: 400px; height: 50px;">
+ Premium Deluxe MotorSport 
+</div>
+
+
+	
+	
+			<h1 >INICIAR SESION USUARIO</h1>
+			
+ 
+	<form action="/login" method="post">
+		<label>Usuario:</label><input type="text" name="username" /><br />
+		<label>Contraseña:</label><input type="password" name="password" /><br />
+		<input type="submit" value="Sign In" /><br />				
+		<input type="hidden" name="_csrf" value="{{token}}"/>
+	</form>
+		
+
+	
+	
+
+	
+</body>
+</html>

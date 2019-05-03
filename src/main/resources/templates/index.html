@@ -1,0 +1,37 @@
+ <!doctype html>
+ <html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Premium deluxe</title></head>
+
+<body bgcolor="#cddf89">
+<font size="6" color="#df7644" face="Tahoma">
+</font>
+<div style="width: 400px; height: 50px;">
+ Premium Deluxe MotorSport 
+</div>
+
+
+<div style="width:1000px; padding:3px;">
+
+<div style="width:245px; background:#FFCC00; float:left;"><a href="nuevoAnuncio">NUEVO ANUNCIO</a></div>
+<div style="width:245px; background:#CCFF66; float:left;"><a href="oferta">MIS OFERTAS</a></div>
+<div style="width:245px; background:#CA2BDA; float:left;"><a href="nuevoUsuario">REGISTRARME</a></div>
+<br><br>
+</div> 
+{{#anuncios}}
+<div style="color: blue;">	
+	<a href="anuncio/{{id}}">{{nombre}} {{asunto}}</a><br>
+</div>
+{{/anuncios}} 
+ <br><br><br>
+ 	{{#admin}}
+	<a href="/admin">Admin Page</a>
+	{{/admin}}
+<br><br>
+	<form action="/logout" method="post">
+		<input type="submit" value="Sign Out" />
+		<input type="hidden" name="_csrf" value="{{token}}"/>
+	</form>
+	
+</body></html>

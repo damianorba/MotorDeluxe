@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Premium deluxe</title></head>
+
+<body bgcolor="#cddf89">
+
+<font size="6" color="#df7644" face="Tahoma">
+</font>
+<div style="width: 400px; height: 50px;">
+ <h2>BORRAR ANUNCIO</h2> 
+</div>
+
+	<form action="admin/borrar_anuncio" method="post">
+		<table class="egt">
+		  <tr>
+		    <td><label>Matricula del coche:</label></td>
+		    <td><input type="text" name="matricula" /></td>
+		  </tr>
+		  
+		 
+		</table>
+	
+		
+		
+		<input type="submit" value="Eliminar Anuncio" /><br />
+		<input type="hidden" name="_csrf" value="{{token}}"/>
+	</form>
+		
+   	  <br><a href="/admin">Volver a la pagina de Administrador</a>
+	
+</body>
+
+</html>
+
+
+

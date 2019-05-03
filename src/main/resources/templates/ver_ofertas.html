@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Premium deluxe</title></head>
+
+<body bgcolor="#cddf89">
+<font size="6" color="#df7644" face="Tahoma">
+</font>
+
+<div style="width: 400px; height: 50px;">
+ Premium Deluxe MotorSport 
+</div>
+
+
+
+	AQUI SE MUESTRAN TODAS LAS OFERTAS<br><br><br>
+   	  	
+   	  		  
+   	  
+   	  	{{#ofertas}}
+   	  	
+   	  	{{fechaOferta}} {{precioOferta}} <br> {{coche}} <br> ID OFERTA: {{id}}
+   	  	
+   	  	<form action="vender" method="post">
+   	  					<input type="hidden" type='number' name='idc' value='{{coche.id}}' />
+   	  					<input type="hidden" type='number' name='ido' value='{{id}}' />
+			<input type='submit' value='vender'/>
+			<input type="hidden" name="_csrf" value="{{token}}"/>
+		</form>
+		<br><br>
+		
+		{{/ofertas}} 
+		<br>
+		
+   	  <br><a href="/">Volver al tablon</a>
+	
+</body>
+
+</html>

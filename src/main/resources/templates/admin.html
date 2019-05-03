@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Premium deluxe</title></head>
+<link rel="stylesheet" type="text/css" href="index.css">
+	
+<body bgcolor="#cddf89">
+<font size="6" color="#df7644" face="Tahoma">
+</font>
+<div style="width: 400px; height: 50px;">
+ Premium Deluxe MotorSport 
+</div>
+
+
+
+<div style="width:1000px; padding:3px;">
+<h3 class="text-black">Opciones de Administrador</h3>
+
+{{#admin}}
+<div style="width:245px; background:#FFCC00; float:left;"><a href="nuevoAnuncio.html">INSERTAR NUEVO ANUNCIO</a></div>
+<div style="width:245px; background:#CA2BDA; float:left;"><a href="nuevoUsuario.html">REGISTRAR USUARIO</a></div>
+<div style="width:245px; background:#CCFF66; float:left;"><a href="borrar_anuncio">ELIMINAR ANUNCIO</a></div>
+<div style="width:245px; background:#CA2BDA; float:left;"><a href="eliminarUsuario.html">ELIMINAR USUARIO</a></div>
+
+{{/admin}}
+
+{{#admin}}
+<h3 class="text-black">Base de datos</h3>
+<ul>
+	<li>
+	<a href="#" class="text-black">{{usuarios}} usuarios | </a>
+	<a href="#" class="text-black"> {{anunciosCount}} anuncios | </a>
+	<a href="#" class="text-black"> {{coches}} coches</a>
+	</li>
+</ul>
+{{/admin}}
+
+
+<br><br>
+</div> 
+{{#anuncios}}
+<div style="color: blue;">	
+	<a href="anuncio/{{id}}">{{nombre}} {{asunto}}</a><br>
+</div>
+{{/anuncios}} 
+<br><br>
+
+<ul class="pagination pagination-lg">
+	<li><a href="/?page=1&size=2">1</a></li>
+	<li><a href="/?page=2&size=2">2</a></li>
+     <li><a href="/?page=3&size=2">3</a></li>
+        
+</ul>
+<div id = "Cerrar sesion Admin">
+	<form action="/logout" method="post">
+       <input type="submit" value="Cerrar Sesion Admin" class= "btn btn-secondary" />
+       <input type="hidden" name="_csrf" value="{{token}}"/>
+       </form>
+</div>
+
+</body>
+</html>
